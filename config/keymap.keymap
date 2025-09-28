@@ -8,20 +8,20 @@
 // #include <dt-bindings/zmk/pointing.h>
 
 #define QWE 0
-#define NIC 1
-#define LIN 2
-#define NICL 3
-#define WIN 4
-#define LWR 5
-#define LWRW 6
-#define RSE 7
-#define RSEW 8
-#define ADJ 9
-#define ADJW 10
-#define MOV 11
-#define MOVW 12
-#define NUM 13
-#define BLE 14
+// #define NIC 1
+// #define LIN 2
+// #define NICL 3
+// #define WIN 4
+#define LWR 1
+// #define LWRW 6
+#define RSE 2
+// #define RSEW 8
+#define ADJ 3
+// // #define ADJW 10
+// #define MOV 11
+// #define MOVW 12
+// #define NUM 13
+// #define BLE 14
 
 &lt {
     quick-tap-ms = <140>;
