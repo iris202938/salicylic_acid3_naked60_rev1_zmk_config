@@ -35,6 +35,7 @@
     continue-list = <UNDERSCORE MINUS>;
 };
 
+/ { // ここが唯一のルートノードの始まり
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
@@ -44,7 +45,6 @@
         };
     }; // conditional_layers の閉じ括弧の後にセミコロンが必要
 
-/ {
     keymap {
         compatible = "zmk,keymap";
 
