@@ -35,13 +35,14 @@
     continue-list = <UNDERSCORE MINUS>;
 };
 
-//     conditional_layers {
-//         compatible = "zmk,conditional-layers";
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
 
-//         tri-layer {
-//             if-layers = <LWR RSE>;
-//             then-layer = <ADJ>;
-//         };
+        tri-layer {
+            if-layers = <LWR RSE>;
+            then-layer = <ADJ>;
+        };
+    }; // conditional_layers の閉じ括弧の後にセミコロンが必要
 
 / {
     keymap {
