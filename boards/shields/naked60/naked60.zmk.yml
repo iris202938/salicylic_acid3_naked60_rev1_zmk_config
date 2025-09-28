@@ -1,0 +1,14 @@
+
+file_format: "1"
+id: naked60
+name: naked60
+type: shield
+features:
+  - keys
+  - studio
+outputs:
+  - usb
+  - ble
+siblings:
+  - naked60_left
+  - naked60_right

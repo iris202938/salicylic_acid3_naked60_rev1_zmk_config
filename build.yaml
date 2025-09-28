@@ -1,0 +1,9 @@
+include:
+  - board: ble_micro_pro
+    shield: naked60_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+  - board: ble_micro_pro
+    shield: naked60_right
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
