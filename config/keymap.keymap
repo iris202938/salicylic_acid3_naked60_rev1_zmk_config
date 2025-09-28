@@ -86,8 +86,8 @@
             bindings = <
                 &none             &none          &none          &none             &none          &none                                          &none          &none            &none            &none             &none                &none
                 &trans            &kp F11        &kp F12        &kp C_MUTE        &kp C_VOL_DN   &kp C_VOL_UP                                   &kp CAPS       &kp PSCRN      	&kp SLCK         &kp PAUSE_BREAK   &kp LS(UP)     		&mt RSHFT INS
-                &mt LCTRL LANG5   &out OUT_BLE   &usb_l2        &bt3_l4           &kp LS(RIGHT)  &kp G                                          &kp INT5       &file_r          &pr_pg           &nx_pg            &file_f     			&kp RCTRL
-                &kp LALT          &bt0_l0        &bt1_l4        &bt2_l4           &kp K_APP      &kp LS(LEFT)                                   &kp LS(DOWN)   &kp LS(LG(LEFT))	&kp LS(LA(LEFT)) &kp LS(LA(RIGHT)) &kp LS(LG(RIGHT))	&trans
+                &mt LCTRL LANG5   &out OUT_BLE   &out OUT_USB   &bt BT_SEL 3      &kp LS(RIGHT)  &kp G                                          &kp INT5       &none            &none            &none             &none     			&kp RCTRL
+                &kp LALT          &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2      &kp K_APP      &kp LS(LEFT)                                   &kp LS(DOWN)   &kp LS(LG(LEFT))	&kp LS(LA(LEFT)) &kp LS(LA(RIGHT)) &kp LS(LG(RIGHT))	&trans
                                   &trans         &none          &none             &kp LS(LEFT)   &trans         &none          &none            &trans         &kp LS(RIGHT)    &none            &none             &trans
             >;
         };
