@@ -1,7 +1,7 @@
 
 #include <physical_layouts.dtsi>
 / {
-    physical_layout0: physical_layout {
+    physical_layout: physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "Layout";
         keys  //                    w   h    x    y     rot    rx    ry
