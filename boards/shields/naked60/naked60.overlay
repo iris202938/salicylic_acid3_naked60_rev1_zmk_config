@@ -26,12 +26,14 @@
         wakeup-source;
 
         diode-direction = "col2row";
+        // DTSファイルの修正案（再掲）
+
         row-gpios
-            = <&gpio0 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            = <&gpio0 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Row 0: PIN7 (P0.19)
+            , <&gpio0 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Row 1: PIN5 (P0.18)
+            , <&gpio0 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Row 2: PIN6 (P0.16)
+            , <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // 🚨 Row 3: PIN2 (P0.11) に変更
+            , <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Row 4: PIN8 (P0.20)
             ;
         col-gpios
             = <&gpio0 5 GPIO_ACTIVE_HIGH>
