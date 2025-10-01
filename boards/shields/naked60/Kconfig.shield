@@ -1,4 +1,2 @@
-config SHIELD_NAKED60_LEFT
-    def_bool $(shields_list_contains,naked60_left)
-config SHIELD_NAKED60_RIGHT
-    def_bool $(shields_list_contains,naked60_right)
+config SHIELD_NAKED60
+    def_bool $(shields_list_contains,naked60)
