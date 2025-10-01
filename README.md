@@ -4,17 +4,17 @@ Generated from QMK info.json
 
 ## Keyboard Information
 - Name: naked60
-- Type: Split
+- Type: shield
 - Normalized Name: naked60
 - Board: ble_micro_pro
 
 ## Files Structure
 
 ### Split Keyboard Files
-- boards/shields/naked60/naked60_left.overlay - Left side hardware definition
-- boards/shields/naked60/naked60_right.overlay - Right side hardware definition
-- boards/shields/naked60/naked60_left.conf - Left side configuration
-- boards/shields/naked60/naked60_right.conf - Right side configuration
+<!-- - boards/shields/naked60/naked60_left.overlay - Left side hardware definition -->
+- boards/shields/naked60/naked60.overlay - Right side hardware definition
+<!-- - boards/shields/naked60/naked60_left.conf - Left side configuration -->
+- boards/shields/naked60/naked60.conf - Right side configuration
 
 ### Common Files
 - boards/shields/naked60/layouts.dtsi - Physical layout definition
