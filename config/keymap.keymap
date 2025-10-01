@@ -7,6 +7,9 @@
 
 // #include <dt-bindings/zmk/pointing.h>
 
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200   // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 240    // default: 10
+
 #define QWE 0
 // #define NIC 1
 // #define LIN 2
