@@ -37,12 +37,12 @@
             ;
         col-gpios
             = <&gpio0  5 GPIO_ACTIVE_HIGH> //PIN20 //P0.5
-			, <&gpio0  3 GPIO_ACTIVE_HIGH> //PIN19 //P0.0
-			, <&gpio0 30 GPIO_ACTIVE_HIGH> //PIN18 //P0.30
-			, <&gpio0  0 GPIO_ACTIVE_HIGH> //PIN17 //P0.3
+			, <&gpio0  0 GPIO_ACTIVE_HIGH> //PIN19 //P0.0
+			, <&gpio0 10 GPIO_ACTIVE_HIGH> //PIN18 //P0.30
+			, <&gpio0  3 GPIO_ACTIVE_HIGH> //PIN17 //P0.3
 			, <&gpio1 14 GPIO_ACTIVE_HIGH> //PIN16 //P1.14
 			, <&gpio1 15 GPIO_ACTIVE_HIGH> //PIN15 //P1.15
-			, <&gpio0 10 GPIO_ACTIVE_HIGH> //PIN14 //P0.10
+			, <&gpio0 30 GPIO_ACTIVE_HIGH> //PIN14 //P0.10
 			, <&gpio0 22 GPIO_ACTIVE_HIGH> //PIN 9 //P0.22
 			, <&gpio0 23 GPIO_ACTIVE_HIGH> //PIN10 //P0.23
 			, <&gpio1  0 GPIO_ACTIVE_HIGH> //PIN11 //P1.0
