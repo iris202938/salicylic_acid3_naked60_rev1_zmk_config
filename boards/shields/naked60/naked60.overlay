@@ -48,7 +48,6 @@
             , <&gpio1  0 GPIO_ACTIVE_HIGH> //PIN11 //P1.0
             , <&gpio1  3 GPIO_ACTIVE_HIGH> //PIN12 //P1.3
             , <&gpio0  8 GPIO_ACTIVE_HIGH> //PIN 1 //P0.8
-            ;
     };
 };
 
