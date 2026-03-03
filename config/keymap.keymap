@@ -52,10 +52,10 @@
             display-name = "QWE";
             bindings = <
                 &kp N1            &kp N2           &kp N3          &kp N4        &kp N5            &kp N6                                       &kp N7        &kp N8            &kp N9        &kp N0    &kp ESC    &kp BSPC
-                &mt LSHFT TAB     &kp Q            &kp W           &kp E         &kp R             &kp T                                        &kp Y         &kp U				&kp I         &kp O     &kp P      &mt RSHFT MINUS
-                &mt LCTRL TAB     &kp A            &kp S           &kp D         &kp F             &kp G                                        &kp H         &kp J				&kp K         &kp L     &kp SEMI   &mt RCTRL SQT
+                &none             &kp Q            &kp W           &kp E         &kp R             &kp T                                        &kp Y         &kp U				&kp I         &kp O     &kp P      &none MINUS
+                &none             &kp A            &kp S           &kp D         &kp F             &kp G                                        &kp H         &kp J				&kp K         &kp L     &kp SEMI   &none
                 &kp LALT          &kp Z            &kp X           &kp C         &kp V             &kp B                                        &kp N         &kp M				&kp COMMA     &kp DOT   &kp FSLH   &kp RGUI
-                                  &kp LSHFT        &none           &kp LANG2     &mt LSHIFT SPACE  &mo LWR          &kp INT5   &kp LG(TAB)      &lt RSE ENTER &kp INT2	        &kp LANG1     &none     &kp RSHFT
+                                  &none            &none           &kp LANG2     &none             &mo LWR          &kp INT5   &kp LG(TAB)      &lt RSE ENTER &kp INT2	        &kp LANG1     &none     &none
             >;
         };
 
