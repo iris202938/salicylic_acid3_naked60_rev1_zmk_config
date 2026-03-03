@@ -1,7 +1,7 @@
 /* ファイルの先頭に追加 */
-&pro_micro_i2c { status = "disabled"; };
-&pro_micro_spi { status = "disabled"; };
-&pro_micro_serial { status = "disabled"; };
+// &pro_micro_i2c { status = "disabled"; };
+// &pro_micro_spi { status = "disabled"; };
+// &pro_micro_serial { status = "disabled"; };
 
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "layouts.dtsi"
