@@ -1,7 +1,7 @@
 /* ファイルの先頭に追加 */
-&pro_micro_i2c {
-    status = "disabled";
-};
+&pro_micro_i2c { status = "disabled"; };
+&pro_micro_spi { status = "disabled"; };
+&pro_micro_serial { status = "disabled"; };
 
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "layouts.dtsi"
@@ -35,13 +35,12 @@
 
         /* Rowの順番をv2.0の物理配線（B6, D4, C6, D1, D0）に並び替え */
         row-gpios
-            = <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 0: B6 (1段目)
-            , <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 1: D4 (2段目)
-            , <&gpio0 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 2: C6 (3段目)
-            , <&gpio0 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 3: D1 (4段目)
-            , <&gpio0 8  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 4: D0 (5段目)
+            = <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 0 (1段目: OK)
+            , <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 1 (2段目: 強化)
+            , <&gpio0 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 2 (3段目: 強化)
+            , <&gpio0 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 3 (4段目: OK)
+            , <&gpio0 8  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 4 (5段目: OK)
             ;
-
         /* Colのピン指定 */
         col-gpios
             = <&gpio0 31 GPIO_ACTIVE_HIGH> // F4
