@@ -27,9 +27,13 @@ jobs:
       - name: Install dependencies
         run: |
           pip3 install --user -U west
+          # ビルドに必要な追加のPythonライブラリ（pyelftools）をインストールします
+          pip3 install --user pyelftools
           west init -l config
           west update
           west zephyr-export
+          # Zephyrのスクリプトが必要とする依存関係をすべてインストールします
+          pip3 install --user -r zephyr/scripts/requirements.txt
 
       - name: Install Zephyr SDK
         run: |
@@ -39,7 +43,6 @@ jobs:
 
       - name: West Build (Naked60 on BLE Micro Pro)
         # -b でボード(ble_micro_pro)を指定し、シールド(naked60)を有効にします。
-        # ZMK_CONFIGにSHIELDの定義が含まれる場所を指定します。
         run: |
           west build -s zmk/app -b ble_micro_pro -- \
             -DSHIELD=naked60 \
