@@ -1,19 +1,17 @@
 manifest:
-remotes:
-- name: zmkfirmware
-url-base: https://github.com/zmkfirmware
-- name: sekigon-gonnoc
-url-base: https://github.com/sekigon-gonnoc
-projects:
-- name: zmk
-remote: zmkfirmware
-# v0.3 から最新の main に変更し、新しいボード定義形式に対応させます
-revision: main
-import: app/west.yml
-- name: zmk-component-ble-micro-pro
-remote: sekigon-gonnoc
-# 必要に応じて特定のコミットに固定することも検討してください
-revision: main
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: sekigon-gonnoc
+      url-base: https://github.com/sekigon-gonnoc
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+    - name: zmk-component-ble-micro-pro
+      remote: sekigon-gonnoc
+      revision: main
 
-self:
-path: config
+  self:
+    path: config
