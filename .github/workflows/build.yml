@@ -31,11 +31,22 @@ jobs:
           west update
           west zephyr-export
 
-      - name: West Build (BLE Micro Pro)
-        # ボード名を 'blemicropro' から候補にあった 'ble_micro_pro' に変更します
+      - name: Install Zephyr SDK
         run: |
-          west build -s zmk/app -b ble_micro_pro -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+          wget -q https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.16.8/zephyr-sdk-0.16.8_linux-x86_64_minimal.tar.xz
+          tar xvf zephyr-sdk-0.16.8_linux-x86_64_minimal.tar.xz
+          cd zephyr-sdk-0.16.8 && ./setup.sh -t arm-zephyr-eabi -c
 
+      - name: West Build (Naked60 on BLE Micro Pro)
+        # -b でボード(ble_micro_pro)を指定し、シールド(naked60)を有効にします。
+        # ZMK_CONFIGにSHIELDの定義が含まれる場所を指定します。
+        run: |
+          west build -s zmk/app -b ble_micro_pro -- \
+            -DSHIELD=naked60 \
+            -DZMK_CONFIG="${GITHUB_WORKSPACE}/config" \
+            -DZEPHYR_SDK_INSTALL_DIR=$(pwd)/zephyr-sdk-0.16.8 \
+            -DUSER_SHIELD_FACTORY="${GITHUB_WORKSPACE}/boards/shields"
+            
       - name: Archive artifacts
         uses: actions/upload-artifact@v4
         with:
