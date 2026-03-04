@@ -32,9 +32,9 @@ jobs:
           west zephyr-export
 
       - name: West Build (BLE Micro Pro)
-        # ここでビルドを実行します
+        # ボード名を 'blemicropro' から候補にあった 'ble_micro_pro' に変更します
         run: |
-          west build -s zmk/app -b blemicropro -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+          west build -s zmk/app -b ble_micro_pro -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
 
       - name: Archive artifacts
         uses: actions/upload-artifact@v4
